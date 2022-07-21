@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(203, 215, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerUI {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(68, 71, 75);
+}
+
+.container {
+    display: grid;
+    border: 8px solid rgb(91, 95, 100);
+    border-radius: 5%;
+    height: 500px;
+    width: 500px;
+}
