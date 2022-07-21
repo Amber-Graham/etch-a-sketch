@@ -1,3 +1,10 @@
+.container {
+    display: grid;
+    border: 8px solid rgb(91, 95, 100);
+    height: 500px;
+    width: 500px;
+}
+
 body {
     background-color: rgb(203, 215, 255);
     display: flex;
@@ -15,9 +22,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 16px;
 }
 
-.introButtons {
+.buttons {
     display: flex;
     gap: 30px;
     padding-bottom: 16px;
@@ -71,46 +79,3 @@ body {
     background: black;
 }
 
-/*slider styling*/
-.rangeSlider {
-    margin-top: 0px;
-}
-input[type="range"] {
-    -webkit-appearance: none;
-}
-input[type="range"]:focus {
-    outline: none;
-}
-input[type="range"]::-webkit-slider-runnable-track {
-    background: rgb(140, 154, 207);
-    height: 10px;
-}
-input[type="range"]::-moz-range-track {
-    background:rgb(140, 154, 207);
-    height: 10px;
-}
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 15px;
-    width: 15px;
-    background: rgb(68, 71, 75);
-    margin-top: -3px;
-    border-radius: 50%;
-}
-input[type="range"]::-moz-range-thumb {
-    -webkit-appearance: none;
-    height: 15px;
-    width: 15px;
-    background: rgb(68, 71, 75);
-    margin-top: -3px;
-    border-radius: 50%;
-}
-/*end of slider styling*/
-
-.container {
-    display: grid;
-    border: 8px solid rgb(91, 95, 100);
-    border-radius: 5%;
-    height: 500px;
-    width: 500px;
-}
