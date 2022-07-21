@@ -11,24 +11,27 @@
 <body>
     <div class="headerUI">
         <h1>Etch-a-Sketch</h1>
+    </div>
         <div class="intro">
             <input type="text" placeholder="Size of grid" 
             value="16" 
             onchange="changeSize(this.value)"
             />
-            <button>Set Size</button>
+            <button class="buttonSize">Set Size</button>
+        </div>
             <div class="buttons">
                 <button class="reset" 
                 onclick="reset()">Reset</button>
-                <button class="reset" 
+                <button class="black" 
                 onclick="changeColor('black')">Black</button>
                 <button class="rainbow" 
                 onclick="changeColor('random')">Rainbow</button>
-                <button class="blackWhite"
+                <button class="eraser"
                 onclick="changeColor('white')">Eraser</button>
             </div>
-        </div>
-    </div>
+        
+   
     <div class="container"></div>
+    <div class="footer">Copyright © Amber Graham 2022</div>
 </body>
 </html>
