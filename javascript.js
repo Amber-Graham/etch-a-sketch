@@ -18,6 +18,9 @@
 // things i KNOW i need
 
 const container = document.querySelector('#container');
+const slider = document.getElementById('gridRange');
+const output = document.getElementById('gridOption');
+output.innerHTML = slider.value;
 
 // i will need a const for the square divs
 // a formula to change the grid size according to the slider
@@ -27,3 +30,12 @@ const container = document.querySelector('#container');
 // a function to allow the slider to go all the way up to 50
 // a function for if the mouse hovers over the square, then the color changes
 // a function for when the reset button is clicked
+
+slider.oninput = function() {
+    output.innerHTML = this.value;
+}
+
+function createGrid() {
+
+}
+
