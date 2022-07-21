@@ -12,12 +12,20 @@
     <div class="headerUI">
         <h1>Etch-a-Sketch</h1>
         <div class="intro">
-            <p>Select your grid size: <span id="gridOption"></span></p>
-            <p class="rangeSlider"><input type="range" min="4" max="50" class="slider" id="gridRange"></p>
-            <div class="introButtons">
-                <button class="reset">Reset</button>
-                <button class="rainbow">Rainbow Grid</button>
-                <button class="blackWhite">Black & White Grid</button>
+            <input type="text" placeholder="Size of grid" 
+            value="16" 
+            onchange="changeSize(this.value)"
+            />
+            <button>Set Size</button>
+            <div class="buttons">
+                <button class="reset" 
+                onclick="reset()">Reset</button>
+                <button class="reset" 
+                onclick="changeColor('black')">Black</button>
+                <button class="rainbow" 
+                onclick="changeColor('random')">Rainbow</button>
+                <button class="blackWhite"
+                onclick="changeColor('white')">Eraser</button>
             </div>
         </div>
     </div>
