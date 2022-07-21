@@ -3,35 +3,51 @@
     border: 8px solid rgb(91, 95, 100);
     height: 500px;
     width: 500px;
+    border-radius: 1em;
 }
 
 body {
     background-color: rgb(203, 215, 255);
     display: flex;
+    min-height: 100vh;
     align-items: center;
     flex-direction: column;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.footer {
+    display: flex;
+    margin-top: auto;
+    font-size: 12px;
+}
+
 .headerUI {
     color: rgb(68, 71, 75);
     text-align: center;
+    font-size: 30px;
 }
 
 .intro {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     gap: 16px;
 }
 
 .buttons {
     display: flex;
     gap: 30px;
-    padding-bottom: 16px;
+    padding: 16px;
 }
 
 .reset {
+    color:rgb(68, 71, 75);
+    background: white;
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 2em;
+}
+
+.black {
     color:rgb(68, 71, 75);
     background: white;
     font-size: 16px;
@@ -47,12 +63,20 @@ body {
     border-radius: 2em;
 }
 
-.blackWhite {
+.eraser {
     color:rgb(68, 71, 75);
     background: white;
     font-size: 16px;
     padding: 4px 10px;
     border-radius: 2em;
+}
+
+.buttonSize {
+    color:rgb(68, 71, 75);
+    background: white;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 5px;
 }
 
 .rainbow:hover {
@@ -66,16 +90,22 @@ body {
     #00C0FF 100%);
 }
 .reset:hover {
-    color: white;
-    background:rgb(91, 95, 100);
+    color: black;
+    background:rgb(255, 85, 85);
     font-size: 16px;
     padding: 4px 10px;
     border-radius: 2em;
 }
 
-.blackWhite:hover {
+.black:hover {
     cursor: pointer;
     color: white;
     background: black;
+}
+
+.eraser:hover {
+    cursor: pointer;
+    color: rgb(39, 39, 39);
+    background: rgb(243, 230, 194);
 }
 
